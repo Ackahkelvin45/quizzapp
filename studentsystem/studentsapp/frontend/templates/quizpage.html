@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../static/js/quizpage.js"></script>
+  <link href="../dist/output.css " rel="stylesheet">
+</head>
+<body id="body">
+  <div class="w-full flex flex-col">
+    <div class="fixed w-full ">
+      <div class="w-full flex flex-row justify-between py-2  top-0">
+        <div class="flex flex-row ">
+          <button id="nav"  onclick="showNav()"><img  src="../src/img/nav.png" height="30px" width="30px" /></button>
+          <span class=" text-xl font-bold ml-4 mt-1 ">classroom</span> 
+        </div>
+        <div class="flex flex-row px-3">
+          <span class="mr-4 mt-1 font-bold text-md " >Kelvin Ackah</span>
+          <img src="../src/img/profile.png" height="35px" width="35px" class="border-solid border-green-400 border-2 rounded-3xl"/>
+          <select class=" mx-2  text-green-600 bg-white   px-2    w-4"   onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+            <option class="text  text-black " >Dashbaord ></option>
+            <option class="text  text-black "  value="./index.html">Home </option>
+            <option class="text-black" >Profile</option>
+            <option class="text-black">Grades</option>
+            <option class="text-black" value="./login.html">Login</option>
+          </select>
+        </div>
+        
+      </div>
+      
+      <hr class="h-1 w-full bg-green-500 ">
+      
+    </div>
+    <div class="w-full flex justify-center mt-14">
+      <h1 class="text-4xl font-bold mt-2 " id="title" ></h1>
+    </div>
+    <div>
+      <h1 class="ml-3 text-xl">
+        Available Quizes
+  </div>
+  <div class="w-full  h-full mt-6 px-6 grid grid-cols-3 gap-8" id="show">
+
+  </div>
+</body>
+
+
+</html>

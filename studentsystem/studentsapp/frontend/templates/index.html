@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css " rel="stylesheet">
+
+  <title>Document</title>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+  <div class="w-full flex flex-col">
+    <div class="absolute w-full ">
+    <div class="w-full flex flex-row justify-between py-2  top-0">
+      <div class="flex flex-row ">
+        <button id="nav"  onclick="showNav()"><img  src="../src/img/nav.png" height="30px" width="30px" /></button>
+        <span class=" text-xl font-bold ml-4 mt-1 ">classroom</span> 
+      </div>
+      <div class="flex flex-row px-3">
+        <span class="mr-4 mt-1 font-bold text-md " id="username"></span>
+        <img src="../src/img/profile.png" height="35px" width="35px" class="border-solid border-green-400 border-2 rounded-3xl"/>
+        <select class=" mx-2  text-green-600 bg-white   px-2    w-4" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+          <option class="text  text-black " ><span  > Dashbaord </span></option>
+          <option class="text  text-black "  value="./index.html"><span  > Home </span></option>
+          <option class="text-black" >Profile</option>
+          <option class="text-black">Grades</option>
+          <option class="text-black" value="./login.html"><button onclick="homepage()">Login</button></option>
+        </select>
+      </div>
+      
+    </div>
+    
+    <hr class="h-1 w-full bg-green-500 ">
+    
+  </div>
+  <div>
+
+  </div>
+  <div class="w-[30%] float-right   flex-col absolute mt-14 h-full  bg-gray-300 py-1 overflow-y-auto  hidden "  id="show">
+
+  <div class="w-full bg-gray-200 px-4 flex flex-row py-2 hover:bg-gradient-to-r hover:from-green-50 hover:to-green-100 duration-500 "> <img src="../src/img/dashboard.png" height="20px" width="30px"/><span class=" ml-3 text-xl ">Dashboard</span></div>
+  <div class="w-full bg-gray-200 px-4 flex flex-row py-2 mt-1 hover:bg-gradient-to-r hover:from-green-50 hover:to-green-100 duration-500" > <img src="../src/img/home.png" height="20px" width="30px"/><span class=" ml-3 text-xl ">Home</span></div>
+  <div class="w-full bg-gray-200 px-4 flex flex-row py-2 mt-1 0" > <img src="../src/img/course.png" height="20px" width="30px"/><span class=" ml-3 text-xl ">My courses</span></div>
+  </div>
+  <div class="w-full flex flex-row " id="cursor">
+  <div class="mt-20 flex w-[75%] bg-gray-100 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] flex-col ml-4 my-4" >
+    <h2 class="font-bold text-2xl ml-4 mt-4 ">Cousre Overview</h2>
+    <div class="flex justify-end px-2 py-1"> 
+      <label>Search: </label><input type="text" placeholder="search course......." class="pl-3 bg-gray-200"></input>
+    </div>
+    <div class=" w-full  px-4 mt-7 py-4 grid grid-cols-3 gap-5 gap-y-5 h-full "   id="course-card">
+  
+    </div>
+
+  </div>
+  <div class="w-[25%] px-4">
+    <div class="flex justify-center">
+      <h1 class="mt-20 font-bold"><buttun > Active Users</buttun> </h1>
+    </div>
+    <div>
+    <div class="flex flex-row  ml-2 mt-2" >
+      <img src="../src/img/profile2.png" height="20px" width="20px" />
+      <span class="ml-3 ">Ackah Kelvin</span>
+    </div>
+    <div class="flex flex-row  ml-2 mt-2" >
+      <img src="../src/img/profile2.png" height="20px" width="20px" />
+      <span class="ml-3 ">wise ayim</span>
+    </div>
+    <div class="flex flex-row  ml-2 mt-2" >
+      <img src="../src/img/profile2.png" height="20px" width="20px" />
+      <span class="ml-3 ">Rod wavw</span>
+    </div>
+    <div class="flex flex-row  ml-2 mt-2" >
+      <img src="../src/img/profile2.png" height="20px" width="20px" />
+      <span class="ml-3 ">James Asare</span>
+    </div>
+    <div class="flex flex-row  ml-2 mt-2" >
+      <img src="../src/img/profile2.png" height="20px" width="20px" />
+      <span class="ml-3 ">Daniel darko</span>
+    </div>
+  </div>
+  </div>
+</div>
+ 
+  </div>
+  <script src="../static/js/frontend.js"></script>
+</body>
+</html>
